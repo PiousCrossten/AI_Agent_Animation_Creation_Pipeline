@@ -1,0 +1,32 @@
+# Manim Agent v4 — Python dependencies
+# Python 3.10+ recommended.
+#
+# IMPORTANT: For GPU (CUDA) support, install PyTorch first from the official index:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+# Then: pip install -r requirements.txt
+# (Skip torch below if you already installed it with CUDA.)
+#
+# For CPU-only: pip install -r requirements.txt is enough (torch will install CPU build).
+
+# Core ML & inference
+torch>=2.0.0
+torchvision
+torchaudio
+transformers==4.44.0
+accelerate>=0.20.0
+bitsandbytes>=0.41.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# Numeric / audio
+numpy>=1.24.0
+scipy>=1.10.0
+Pillow>=9.0.0
+soundfile>=0.12.0
+
+# Animation
+manim==0.18.1
+
+# Speech: TTS and transcription
+openai-whisper>=20231117
+kokoro-onnx>=0.1.0
